@@ -12,12 +12,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_davinci
+PRODUCT_NAME := cherish_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T
 PRODUCT_MANUFACTURER := Xiaomi
+
+TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GMS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_QUICK_TAP := true
+USE_PIXEL_CHARGING := true
+TARGET_INCLUDE_CARRIER_SETTINGS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=Rumais
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
