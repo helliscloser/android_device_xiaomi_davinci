@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_davinci.mk
+    $(LOCAL_DIR)/corvus_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_davinci-user \
-    cherish_davinci-userdebug \
-    cherish_davinci-eng
+    corvus_davinci-user \
+    corvus_davinci-userdebug \
+    corvus_davinci-eng
